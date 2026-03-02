@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F1F8E9">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Field Analysis (5 Points)"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="#2E7D32"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"/>
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="3"
+            android:alignmentMode="alignMargins"
+            android:layout_marginBottom="20dp">
+
+            <ImageView android:id="@+id/iv1" android:layout_width="100dp" android:layout_height="100dp" android:scaleType="centerCrop" android:layout_margin="4dp" android:background="#CCCCCC"/>
+            <ImageView android:id="@+id/iv2" android:layout_width="100dp" android:layout_height="100dp" android:scaleType="centerCrop" android:layout_margin="4dp" android:background="#CCCCCC"/>
+            <ImageView android:id="@+id/iv3" android:layout_width="100dp" android:layout_height="100dp" android:scaleType="centerCrop" android:layout_margin="4dp" android:background="#CCCCCC"/>
+            <ImageView android:id="@+id/iv4" android:layout_width="100dp" android:layout_height="100dp" android:scaleType="centerCrop" android:layout_margin="4dp" android:background="#CCCCCC"/>
+            <ImageView android:id="@+id/iv5" android:layout_width="100dp" android:layout_height="100dp" android:scaleType="centerCrop" android:layout_margin="4dp" android:background="#CCCCCC"/>
+        </GridLayout>
+
+        <Button
+            android:id="@+id/btnDetect"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="RUN AI DETECTION"
+            android:backgroundTint="#1B5E20"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp"/>
+
+        <ProgressBar
+            android:id="@+id/loadingSpinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            android:layout_margin="20dp"/>
+
+        <LinearLayout
+            android:id="@+id/resultContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@android:color/white"
+            android:padding="16dp"
+            android:visibility="gone"
+            android:elevation="4dp">
+
+            <TextView
+                android:id="@+id/tvMajorResult"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Status: Analyzing..."
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#C62828"/>
+
+            <TextView
+                android:id="@+id/tvAverages"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Probabilities will appear here"
+                android:layout_marginTop="8dp"
+                android:lineSpacingExtra="4dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

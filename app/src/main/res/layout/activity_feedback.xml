@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E8F5E9">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="24dp">
+
+        <!-- Card Container -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@android:color/white"
+            android:padding="24dp"
+            android:elevation="6dp">
+
+            <TextView
+                android:text="Send Feedback"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                android:textColor="#2E7D32"
+                android:layout_gravity="center"
+                android:paddingBottom="24dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <!-- Recipient Username -->
+            <EditText
+                android:id="@+id/etRecipientUsername"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Recipient Username"
+                android:padding="12dp"
+                android:background="@android:drawable/edit_text"
+                android:layout_marginBottom="12dp"/>
+
+            <!-- Feedback -->
+            <EditText
+                android:id="@+id/etFeedback"
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:hint="Enter feedback"
+                android:gravity="top"
+                android:inputType="textMultiLine"
+                android:padding="12dp"
+                android:background="@android:drawable/edit_text"
+                android:layout_marginBottom="20dp"/>
+
+            <!-- Submit Feedback -->
+            <Button
+                android:id="@+id/btnSubmitFeedback"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:text="📤  Submit Feedback"
+                android:textColor="@android:color/white"
+                android:backgroundTint="#43A047"
+                android:layout_marginBottom="12dp"/>
+
+            <!-- Cancel -->
+            <Button
+                android:id="@+id/btnCancel"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:text="Cancel"
+                android:textColor="@android:color/white"
+                android:backgroundTint="#9E9E9E"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

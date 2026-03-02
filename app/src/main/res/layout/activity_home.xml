@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E8F5E9">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="24dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@android:color/white"
+            android:padding="24dp"
+            android:elevation="6dp">
+
+            <TextView
+                android:id="@+id/tvWelcome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Welcome"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                android:textColor="#2E7D32"
+                android:layout_gravity="center"
+                android:paddingBottom="24dp"/>
+
+            <Button
+                android:id="@+id/btnCaptureImage"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:text="📷  Capture Image"
+                android:textColor="@android:color/white"
+                android:backgroundTint="#43A047"
+                android:layout_marginBottom="12dp"/>
+
+            <Button
+                android:id="@+id/btnUploadImage"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:text="⬆️  Upload Image"
+                android:textColor="@android:color/white"
+                android:backgroundTint="#66BB6A"
+                android:layout_marginBottom="12dp"/>
+
+            <Button
+                android:id="@+id/btnViewAnalysis"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:text="📊  View Analysis"
+                android:textColor="@android:color/white"
+                android:backgroundTint="#388E3C"
+                android:layout_marginBottom="12dp"/>
+
+            <Button
+                android:id="@+id/btnViewFeedback"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:text="📩  View Feedback"
+                android:textColor="@android:color/white"
+                android:backgroundTint="#1B5E20"
+                android:layout_marginBottom="12dp"
+                android:visibility="gone"/>
+
+            <Button
+                android:id="@+id/btnFeedback"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:text="💬  Give Feedback"
+                android:textColor="@android:color/white"
+                android:backgroundTint="#2E7D32"
+                android:layout_marginBottom="12dp"
+                android:visibility="gone"/>
+
+            <Button
+                android:id="@+id/btnAdminApproval"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:text="🛠  Approve Field Experts"
+                android:textColor="@android:color/white"
+                android:backgroundTint="#FF9800"
+                android:layout_marginBottom="12dp"
+                android:visibility="gone"/>
+
+            <Button
+                android:id="@+id/btnLogout"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:text="Logout"
+                android:textColor="@android:color/white"
+                android:backgroundTint="@android:color/holo_red_dark"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

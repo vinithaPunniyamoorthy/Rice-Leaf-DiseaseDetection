@@ -1,0 +1,4 @@
+Brown_Spot
+Healthy
+Rice_Blast
+Unknown
